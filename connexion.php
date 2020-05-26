@@ -45,7 +45,7 @@
                 $resultat_mdp = mysqli_fetch_all($recupmdp, MYSQLI_ASSOC);
 
                 $var = $resultat_mdp[0]['password'];
-                echo $var;
+                
                 if (!empty($resultat_mdp))
                 {
                     if (password_verify($mdp, $var))
